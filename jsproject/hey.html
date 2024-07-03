@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- DOM 
+     DOCUMENT OBJECT MODEL
+     document.getElementById
+
+     can be class / element too
+
+     -->
+    <h1>GROCERY LIST</h1>
+    <form onsubmit="addItem()">
+        <input type="text" id="item" placeholder="enter items">
+        <button type="submit">ADD ITEM</button>
+        </form>
+    <ul id="grocerylist"></ul>
+
+
+    <script src="hey.js">
+    function addItem() {
+        event.preventDefault();
+    const item = document.getElementById('item').value;
+    const li = document.createElement('li')
+    li.textContent = item;
+    document.getElementById('grocerylist').appendChild(li);
+    document.getElementById('item').value='';
+    }
+    </script> 
+
+</body>
+</html>

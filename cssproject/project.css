@@ -1,0 +1,22 @@
+.navbar{
+    background-color: black;
+    color: white;
+    height: 40px;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+.left{
+    background-color: blue;
+    display: inline-block;
+    height: 60vh;
+    width: 49%;
+}
+
+.right{
+    background-color: purple;
+    display: inline-block;
+    height: 60vh;
+    width: 50%;
+}
+
+
